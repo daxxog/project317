@@ -1,0 +1,89 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: xtGlWcavIDXm63l5+XQv/HqJKEk=
+Created-By: 1.6.0_26 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: vZbTnyTO8bV3TtsHW0aQ/8nH7uM=
+
+Name: mudclient/GameApplet.java
+SHA1-Digest: J1FH841aC5Tl1a73U8/r8+OlXng=
+
+Name: mudclient/GameAppletMiddleMan.java
+SHA1-Digest: gLW/M7B5hAHviPp48SZUt5BcyAI=
+
+Name: mudclient/Loader.java
+SHA1-Digest: NyZwZX92lQgGEVHYpu6QD5/A01c=
+
+Name: mudclient/CameraModel.java
+SHA1-Digest: cvkiS/vaRJEAVbNlVSMvijDN5+g=
+
+Name: mudclient/PacketConstruction.java
+SHA1-Digest: CCe7ix+d1MfKdemfUlOOpgYd5NI=
+
+Name: mudclient/GameFrame.java
+SHA1-Digest: GphKTneis8MVTkxd3K1c6nL7Eqc=
+
+Name: mudclient/Camera.java
+SHA1-Digest: 3mogfEmTmrtkwX0f17mCzC4//cw=
+
+Name: mudclient/GameObject.java
+SHA1-Digest: kiCEVJrWvd0vE0wMGUn03Rn8Rms=
+
+Name: mudclient/link.java
+SHA1-Digest: IpjJxc7tmkOWXvod2cnI0CJ6fvU=
+
+Name: mudclient/StreamClass.java
+SHA1-Digest: XkGeBroB0jtGxqxnb/dUBbWmtR4=
+
+Name: mudclient/LoginDataEncryption.java
+SHA1-Digest: FtjhMKiEZZodsaJOrvU9PyQvY4o=
+
+Name: mudclient/Mob.java
+SHA1-Digest: wlFDm9yXjHXQ+9GInLrHVa8c4Fs=
+
+Name: mudclient/Data.java
+SHA1-Digest: tyf4gj/JFPbtl2dXUmNwr3IiapM=
+
+Name: mudclient/DataEncryption.java
+SHA1-Digest: dgJeeXACgA23g6WkX7i4mCIxQ5E=
+
+Name: mudclient/ChatFilter.java
+SHA1-Digest: khxoZu/+a2Cp8endQSe4phobk60=
+
+Name: mudclient/AudioReader.java
+SHA1-Digest: NOzKzIAnJEca3divk2Pl67ZMnLY=
+
+Name: mudclient/DataFileDecrypter.java
+SHA1-Digest: qhqsuT1hnPJ4xivqCB19dHPncnI=
+
+Name: mudclient/CameraVariable.java
+SHA1-Digest: 4EOe+LlM/PH1IPodwtfprTsBIPQ=
+
+Name: mudclient/mudclient.java
+SHA1-Digest: oW4tfa4eUfHcZm8gLYdbI+Ft/P0=
+
+Name: mudclient/ChatMessage.java
+SHA1-Digest: a4RCyhsgGG3e8pvRjlCyMglNsjg=
+
+Name: mudclient/Menu.java
+SHA1-Digest: qnmYo/u0CVrQusuneUkvoxz/Ts0=
+
+Name: mudclient/EngineHandle.java
+SHA1-Digest: 9s8yAF+rZKyxhBKak61UKpa3y1s=
+
+Name: mudclient/GameImageMiddleMan.java
+SHA1-Digest: XBuQ/YAAQULZQw2uHwA9JiaRZkM=
+
+Name: client.java
+SHA1-Digest: bagbqIt+MnACuT5e1PNCPHKV7ws=
+
+Name: mudclient/GameImage.java
+SHA1-Digest: Drh/rO6EcnX3flB5lKNxkK3Vngo=
+
+Name: mudclient/Config.java
+SHA1-Digest: pKPBINEvJ5sPUvGMsEHyruwhOms=
+
+Name: mudclient/DataFileVariables.java
+SHA1-Digest: J53kBfnMUz/I7DQZ06vM1+zESNs=
+
+Name: mudclient/DataOperations.java
+SHA1-Digest: 6SI9s/90uqeaZLG6F6A2aIUr/eg=
+

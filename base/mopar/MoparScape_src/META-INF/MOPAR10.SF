@@ -1,0 +1,125 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: xtGlWcavIDXm63l5+XQv/HqJKEk=
+Created-By: 1.6.0_26 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: LIfDC0OofvMYO3Flodq4hIMJ7eg=
+
+Name: org/moparscape/iface/ServerInterface.java
+SHA1-Digest: gsUPEm00LPGJAACczGHZnRrMD0s=
+
+Name: org/moparscape/res/AbstractDownloadListener.java
+SHA1-Digest: ala71PCMzBGwlpWAu5WVawGGFLc=
+
+Name: org/moparscape/classloader/CRCClassLoaderOrig.java
+SHA1-Digest: JXvqiu7vhTQSreB580qrHsZZX1I=
+
+Name: org/moparscape/res/MakeTorrent.java
+SHA1-Digest: 2sWiwg4OfgrdMt4JZvCoMIWJ7B0=
+
+Name: org/moparscape/res/ChecksumInputStream.java
+SHA1-Digest: uxFSgAFVVpOmZi66ov1uGlSgQeI=
+
+Name: org/moparscape/Debug.java
+SHA1-Digest: C/i6RBOGrQuIo3C+zEZ1JBY7U10=
+
+Name: org/moparscape/cacheutils/v317/Main.java
+SHA1-Digest: vYAmLAvYmUqH2UmHUu1Nvs/M9G4=
+
+Name: org/moparscape/res/impl/BTDownloaderCRCs.java
+SHA1-Digest: DxfJXSiw7tNXrci8f8ZqcgZZwWA=
+
+Name: org/moparscape/userver/Server.java
+SHA1-Digest: gSvIeDh7KaNoX9gWT+56/fKww7U=
+
+Name: org/moparscape/security/SecurityManager.java
+SHA1-Digest: IAxntJBTme2mMqkLPHF9/FaHr6Y=
+
+Name: org/moparscape/cacheutils/v508/CacheFileSet.java
+SHA1-Digest: LR4ik590a4/8JEHEQuOZJHM1dTk=
+
+Name: org/moparscape/userver/v508/ConcurrentOndemandServer.java
+SHA1-Digest: tQIxGCjwgvA78m8bkL0k5bIel8o=
+
+Name: org/moparscape/res/ChecksumInfo.java
+SHA1-Digest: U0oSeBirP7Xgb5ukrRbb3IiF9Xc=
+
+Name: gpl.txt
+SHA1-Digest: JUGRLzqGswpGIxkX9z6gAvIslFA=
+
+Name: org/moparscape/userver/v317/JaggrabServer.java
+SHA1-Digest: sCWtT2v/KWjkB7RqPgH64yb0UCs=
+
+Name: org/moparscape/res/DownloadListener.java
+SHA1-Digest: h9b7YtU655OyWAMQ+HspX6XVdAU=
+
+Name: org/moparscape/rsakeys/Base64.java
+SHA1-Digest: EJ6qrwn+NZxEMpQnubxhmrqJnRE=
+
+Name: org/moparscape/cacheutils/v508/FileOnDisk.java
+SHA1-Digest: +2KvMLdc4/rVqx4fPsFBPawilaQ=
+
+Name: org/moparscape/res/impl/URLDownloader.java
+SHA1-Digest: GDo99mQDl+rmgqPR+NG5WdKzaIU=
+
+Name: org/moparscape/res/Base32.java
+SHA1-Digest: mKJUyNLI7DKiTmK2qBEZjlQrgEE=
+
+Name: org/moparscape/res/CompleteRunnable.java
+SHA1-Digest: 5gzXdUnCyub9v8tAEZbX8VZr6/A=
+
+Name: org/moparscape/res/NullOutputStream.java
+SHA1-Digest: MKFS5/Q9D++nEKb0qa54eWVJ9gk=
+
+Name: readme.txt
+SHA1-Digest: 8dLDnyOZA2qcIKIXUQsU5kvGfnU=
+
+Name: org/moparscape/rsakeys/KeyGenerator.java
+SHA1-Digest: uL3g0RPN+lvM9zsrF+ra2ac1mTM=
+
+Name: org/moparscape/classloader/CRCClassLoader.java
+SHA1-Digest: of/rmCNphqRBQ+Nc4rvVXFA2pYw=
+
+Name: org/moparscape/cacheutils/v317/CacheIndex.java
+SHA1-Digest: +1Xv1NOxwcbZmeH+UL0IaOZwnkg=
+
+Name: org/moparscape/cacheutils/v317/CacheFile.java
+SHA1-Digest: lbGZ4iKtgrhYISsbuRcs6D96u9E=
+
+Name: org/moparscape/cacheutils/v317/ByteStream.java
+SHA1-Digest: cNybwhtNQOs5J+ZxktorsAyBdcg=
+
+Name: org/moparscape/iface/Hasher.java
+SHA1-Digest: v1O5YHX2k3x+Y5zSD5kBwc6QXsw=
+
+Name: org/moparscape/cacheutils/v508/CacheFile.java
+SHA1-Digest: qP23xfu8VlFtd4KeQhKUytT8Bis=
+
+Name: org/moparscape/cacheutils/v508/Main.java
+SHA1-Digest: SNLxw5qR7tZYFfSv4bNdNWZPMIE=
+
+Name: org/moparscape/res/impl/BTDownloader.java
+SHA1-Digest: ADA4Ox/aCvnjMv+efe0tI2MlDR0=
+
+Name: org/moparscape/res/ResourceGrabber.java
+SHA1-Digest: Ry4dCQl8NyufY9UfDXLhrcekDr0=
+
+Name: org/moparscape/classloader/CRCJar.java
+SHA1-Digest: XVKmmNLeKKMaJI6TbgCrN6FHqAQ=
+
+Name: org/moparscape/cacheutils/v508/Misc.java
+SHA1-Digest: mGXg0mTDp6Z5bZopHdJJA40iE5I=
+
+Name: org/moparscape/res/impl/Downloader.java
+SHA1-Digest: /evNdH1MkKR1AcibdYeo44oawsg=
+
+Name: org/moparscape/userver/v508/OndemandServer.java
+SHA1-Digest: 7QVQvIs/AJ1OLU7ElS1ziO7TkSE=
+
+Name: org/moparscape/userver/v317/ConcurrentOndemandServer.java
+SHA1-Digest: COv0m4hqul1I7YGkQEWAj19wDtY=
+
+Name: org/moparscape/iface/ClientInterface.java
+SHA1-Digest: vASDqku9A9bmq6ghwnwGJtWqmQY=
+
+Name: org/moparscape/cacheutils/v508/RandomAccessFile.java
+SHA1-Digest: 7pqu8Z8MUiycg0drvUftW8DYLcA=
+

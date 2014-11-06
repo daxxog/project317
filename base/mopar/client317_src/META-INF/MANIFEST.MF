@@ -1,0 +1,226 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_26-b03 (Sun Microsystems Inc.)
+
+Name: rs/Class36.java
+SHA1-Digest: OjyHmVcT37+8cw0UyXZxxxzmyTU=
+
+Name: rs/MRUNodes.java
+SHA1-Digest: z9L+QcWhcOlFSJKxhYTHX/5UQLs=
+
+Name: rs/cache/OnDemandFetcher.java
+SHA1-Digest: eCI9ZXIFoJOkYC8n6rLWaNAErDA=
+
+Name: rs/client.java
+SHA1-Digest: 3Hoc/H7phkg+Zy/2fxuyylL7qjo=
+
+Name: rs/stream/Stream.java
+SHA1-Digest: d3d6XuFKDYHPTb9oOuZ9vFQoL3A=
+
+Name: rs/Ground.java
+SHA1-Digest: 9oSbUsejltBgKQ0cXniSkNUzwvM=
+
+Name: rs/animable/Player.java
+SHA1-Digest: JRS+3zx4K4zC6YkG1oOMJmOFbVE=
+
+Name: rs/cache/Decompressor.java
+SHA1-Digest: PkSM8s7rvXgbQmUfc73L3rvd6rw=
+
+Name: rs/cache/OnDemandData.java
+SHA1-Digest: krtvbztEJx6xG+7h6Wy7pRSkSx0=
+
+Name: rs/config/Varp.java
+SHA1-Digest: eomKR5CeQVvM67rVIL/HxJP1NYs=
+
+Name: rs/anticheat/MouseDetection.java
+SHA1-Digest: SlqVkQDNdd8ip9lRcX1j/87BvLo=
+
+Name: rs/Class6.java
+SHA1-Digest: Vy1uQrU8tDDTnOdVSq3ZIRkJFkA=
+
+Name: rs/Class47.java
+SHA1-Digest: ae0/kdJvH8STa1cZ3Jc0SOhIBxw=
+
+Name: rs/config/ObjectDef.java
+SHA1-Digest: Zi4CxXGZUE7n8DJQ7Fm8bvCaOV8=
+
+Name: rs/sign/signlink.java
+SHA1-Digest: NETQrMZhph+pW5J8JspAbZ9a9nQ=
+
+Name: rs/ObjectManager.java
+SHA1-Digest: 5If/1oRb72dcKZOSEtAC3jHF3uM=
+
+Name: rs/graphics/Texture.java
+SHA1-Digest: ZTS3HQtCFIA3F3WGkB1Goyq3y9c=
+
+Name: rs/RSFrame.java
+SHA1-Digest: znAKmgf5jmmhi/XKIjrIfnmy00Q=
+
+Name: rs/graphics/Sprite.java
+SHA1-Digest: Fn+fW01MPHlOirjAfywNyzddfCk=
+
+Name: rs/animable/Animable_Sub5.java
+SHA1-Digest: kNhFpvo6TZl4pCnTU67D/9usJGs=
+
+Name: rs/graphics/Background.java
+SHA1-Digest: Y/0ePFy0MWWmRUagHMfaIOhyvHE=
+
+Name: rs/TextClass.java
+SHA1-Digest: gt/YF36FdCUwxeEXMT/+NrT7c00=
+
+Name: rs/NodeList.java
+SHA1-Digest: 84IG5XKexc+lGYkaKG6ABzsNHsw=
+
+Name: rs/Class33.java
+SHA1-Digest: wEVBfz4NFUlTVjWZtWRKb2XL72g=
+
+Name: client.java
+SHA1-Digest: Pv4hRbN21pmZ7ohz0hA5pFcTgO0=
+
+Name: rs/net/ISAACRandomGen.java
+SHA1-Digest: wHjobFRg5Qx/nPb+QFDY/Imw+Xk=
+
+Name: rs/Class29.java
+SHA1-Digest: H6Ju9jxuuYjgDGO242qmywFlQ/U=
+
+Name: rs/TextInput.java
+SHA1-Digest: DPXfm+DsjcrTPltrG/5DDFo+HcI=
+
+Name: rs/NodeCache.java
+SHA1-Digest: cnSVdMNO8fhw7lr1C4ceHbCHtgU=
+
+Name: rs/Object2.java
+SHA1-Digest: 8FhyCgkj/qjXGOVk9W4L3mqZseM=
+
+Name: rs/graphics/RSImageProducer.java
+SHA1-Digest: Y3NzzDqIztNGYJT+YPHK+a5QWJs=
+
+Name: rs/Class40.java
+SHA1-Digest: XacpDfaiAWV+y1Raqe84pBLQEMQ=
+
+Name: rs/animable/Animable_Sub3.java
+SHA1-Digest: BVo6fV6T2yqZCTAzJxeFnw4vM+Y=
+
+Name: rs/animable/Item.java
+SHA1-Digest: wmT+bgvlgFaYOSnwjDCLfI3Ms0E=
+
+Name: rs/config/ItemDef.java
+SHA1-Digest: CAXTVkCM/HIrwAR1ahr3Bo4rUzk=
+
+Name: rs/Sounds.java
+SHA1-Digest: 0aSdAEzvI+/nSzz8aBvAJgJalLE=
+
+Name: rs/stream/Class13.java
+SHA1-Digest: 1ZtRG/P5KFmudOgceqm5IyB5zQc=
+
+Name: rs/cache/OnDemandFetcherParent.java
+SHA1-Digest: TnjQgiLq1Otnl85HuG+9MdIba3E=
+
+Name: rs/config/IDK.java
+SHA1-Digest: VM89olJPahMD3l0DdFeQXukYbvk=
+
+Name: rs/Class21.java
+SHA1-Digest: T9FHpg/hFQwSYU6/gSkEmmsBUMA=
+
+Name: rs/Class4.java
+SHA1-Digest: 6PZvR0AHe31pQsStw+x7KkUn2PU=
+
+Name: rs/constants/SizeConstants.java
+SHA1-Digest: oNAlhr7gv5kbNqHn8U+6qmZONcs=
+
+Name: rs/config/EntityDef.java
+SHA1-Digest: cz4/GJelpRHIUWCcN2OdQ+pX/sc=
+
+Name: rs/WorldController.java
+SHA1-Digest: NKrH5MkfzG/uY4VM7ar53fu+OSY=
+
+Name: rs/animable/Animable_Sub4.java
+SHA1-Digest: 1kpnqS1o0N2QK7IV47Txd/70ivM=
+
+Name: rs/stream/Class32.java
+SHA1-Digest: Vz3KyVk2rVG0z5gH2abYcVNit2s=
+
+Name: rs/animable/NPC.java
+SHA1-Digest: FRV3FIY1JK1XjXFLU5W3AHfd+ZU=
+
+Name: rs/animable/Entity.java
+SHA1-Digest: L/j4hMN0PKE1fIfFpQv4DjRT91o=
+
+Name: rs/stream/StreamLoader.java
+SHA1-Digest: zby8oI60pXvffVEdlFgCljq6uXs=
+
+Name: rs/Object3.java
+SHA1-Digest: nuV2vfHcZSWtOwx5SwmW+Gob124=
+
+Name: rs/RSApplet.java
+SHA1-Digest: kGsE/7mfgyDDUFau6Y7GzHgo2t4=
+
+Name: rs/config/VarBit.java
+SHA1-Digest: jej2gBmCYI6vjsYIniM8QSNIAiI=
+
+Name: rs/config/Censor.java
+SHA1-Digest: xUqxL24cHDV2PWipkcZi7LztjNs=
+
+Name: rs/Node.java
+SHA1-Digest: VF3p/lfyNgIZFlatlZ8G/NUlIKI=
+
+Name: rs/Class39.java
+SHA1-Digest: /i/jevI2mbwWTbs0uc7F1I2w89I=
+
+Name: rs/config/SpotAnim.java
+SHA1-Digest: 8+Gj8H6oaY82PyeBpt2xPgaysSk=
+
+Name: rs/Class43.java
+SHA1-Digest: ZkMaBJmIkpwrvCI3/vGZMPMNu+4=
+
+Name: rs/NodeSubList.java
+SHA1-Digest: OJQufSElqWehBrcX9OBD8pI5QTg=
+
+Name: rs/Class11.java
+SHA1-Digest: 6u/MZ8cEaA353R1zfKPBLxIAXbs=
+
+Name: rs/config/Animation.java
+SHA1-Digest: WiS7+YPo1KI5+Em0Z+GmuHhPg9w=
+
+Name: rs/constants/Skills.java
+SHA1-Digest: 5oGiENI/FKOkmu4gQIBQ5bHYyM0=
+
+Name: rs/Object1.java
+SHA1-Digest: GAM2r5A+GUBVA0v+35VMP6f+rBI=
+
+Name: rs/graphics/DrawingArea.java
+SHA1-Digest: NCp0p/yrHg3nsDCP77dIJ9ZFzU0=
+
+Name: rs/Object4.java
+SHA1-Digest: VG88xyoeSa/qKiEznriQdBV5kjY=
+
+Name: rs/animable/Model.java
+SHA1-Digest: lUzmZqOJVu1x4Mc/Nrvz3Q5lAvE=
+
+Name: rs/NodeSub.java
+SHA1-Digest: tyEgnWdXt5Ik1aYOSm9asTXZk9o=
+
+Name: rs/Class30_Sub1.java
+SHA1-Digest: nJdkZk7cnr4jEMv9aJHgTZNjxfw=
+
+Name: rs/Object5.java
+SHA1-Digest: 4O4EkoEYW0t3HR6DWyydP0ueSPE=
+
+Name: rs/RSInterface.java
+SHA1-Digest: ZYVHTSiVDEjDaIhP7ECP9nD6wCc=
+
+Name: rs/net/RSSocket.java
+SHA1-Digest: l7XuX54i4PjXGNf3EJem5H0QbSw=
+
+Name: rs/config/Flo.java
+SHA1-Digest: 6OGcbb0pbineSPd/to1ND7DhImw=
+
+Name: rs/animable/Animable.java
+SHA1-Digest: qceO2nsliAABq2IBq15258cohfs=
+
+Name: rs/Class18.java
+SHA1-Digest: 5WAh+qatpJGAQUlgHglJO4WRQmU=
+
+Name: rs/graphics/TextDrawingArea.java
+SHA1-Digest: /IZ8HCamK5SMcsku0JFy2+OjgbI=
+

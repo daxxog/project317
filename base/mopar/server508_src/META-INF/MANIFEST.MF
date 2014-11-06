@@ -1,0 +1,316 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_26-b03 (Sun Microsystems Inc.)
+
+Name: DavidScape/io/PacketManager.java
+SHA1-Digest: 2OrFHjyiQZVBjLrB4T1vX3DudoI=
+
+Name: DavidScape/Engine.java
+SHA1-Digest: 4OKC1aTNo39qGhSBvlZMrpKizH4=
+
+Name: DavidScape/io/packets/Commands.java
+SHA1-Digest: 6gP7unqEA5BG6lz3SOU8Lo0OopU=
+
+Name: DavidScape/Server.java
+SHA1-Digest: HyhzB6e+Ned8EWEjvfanSSl1pO8=
+
+Name: DavidScape/Skills/Mining.java
+SHA1-Digest: 4SCh0qEziqA6++OWl8HaP4xf/4M=
+
+Name: DavidScape/io/packets/Walking.java
+SHA1-Digest: StZbHF5jeHIZEK23YHq6kqHStME=
+
+Name: DavidScape/Skills/construction/Construction.java
+SHA1-Digest: P0KqUtDbMzlXHt9nQv/sfjh/kXw=
+
+Name: DavidScape/io/packets/ObjectOption2.java
+SHA1-Digest: oHGfVf7XAL/+2POJtCOLQSqjg8Q=
+
+Name: DavidScape/io/packets/MagicOnPlayer.java
+SHA1-Digest: atUt2Tt/T5YpXeT/nfnwSWK7bWQ=
+
+Name: DavidScape/npcs/loading/LoadNPCLists.java
+SHA1-Digest: iiiZmhnxgNFssP1RRglqGbXFkYs=
+
+Name: DavidScape/world/items/BankUtils.java
+SHA1-Digest: 1HvYRNTssjN1oXVQ/6RZATc8NVU=
+
+Name: DavidScape/ClanChat/ClanList.java
+SHA1-Digest: Q/ujak0yv08j2gdIzqDu0ceNhsc=
+
+Name: DavidScape/net/PlayerSocket.java
+SHA1-Digest: q3cq/jERiwFkpnmlpFnD8kh5rUc=
+
+Name: DavidScape/world/mapdata/MapList.java
+SHA1-Digest: +tuG+/Wa0W+7nZfwEuCe/un22/Q=
+
+Name: DavidScape/npcs/loading/NPCList.java
+SHA1-Digest: Uv/wGI0U+uga97OqJmDYrza9pKw=
+
+Name: DavidScape/io/packets/ItemOption1.java
+SHA1-Digest: RViCPGOaLK1VHCC6vgSuuIaODMM=
+
+Name: DavidScape/io/packets/desktop.ini
+SHA1-Digest: vD2MvcmrgT9TITAjIwwximF8/MM=
+
+Name: DavidScape/players/ptrade/TButtons.java
+SHA1-Digest: ui1bXi0bv4BotCVmrfkHoiecJKk=
+
+Name: DavidScape/io/packets/ItemOnObject.java
+SHA1-Digest: RwoVARsplN4MEg1bunD/k+3N5tw=
+
+Name: DavidScape/Skills/Woodcutting.java
+SHA1-Digest: I/XTNVd6jiaAFWo5QLPo3HWkTEY=
+
+Name: DavidScape/players/update/PlayerUpdate.java
+SHA1-Digest: 0kKoCXv6ctJVyhxeP320jHgoTaE=
+
+Name: DavidScape/io/packets/Assault.java
+SHA1-Digest: mAEIfWEYDuMOAFZ0K27FFXA7dhw=
+
+Name: DavidScape/net/desktop.ini
+SHA1-Digest: vD2MvcmrgT9TITAjIwwximF8/MM=
+
+Name: DavidScape/npcs/NPC.java
+SHA1-Digest: lNjB3/edwcNkye3o2gmr7404hRc=
+
+Name: DavidScape/io/packets/ItemOperate.java
+SHA1-Digest: UT7k6f5JbKA26byEXmuQ1SBFuwI=
+
+Name: DavidScape/io/packets/ActionButtons.java
+SHA1-Digest: 8KEyy6m9w6YKlquS9Y2N0XHQqkg=
+
+Name: DavidScape/players/update/Z-FileSearcher.jar
+SHA1-Digest: FBPaHsS1R6XRN0T0sDGlSCe4f40=
+
+Name: DavidScape/io/packets/ItemSelect.java
+SHA1-Digest: 9Q+cFqDWYH+ukpAPAL9uWe1LkJs=
+
+Name: DavidScape/util/Vars.java
+SHA1-Digest: vKibN9GWi2toNMC1BjJCncEG1Fw=
+
+Name: DavidScape/ClanChat/SaveChats.java
+SHA1-Digest: xpaDP63qUKmRg4y+Ni/6FFc0k9Y=
+
+Name: DavidScape/util/ShopHandler.java
+SHA1-Digest: IOCtIQ8dBIkK0i00IFjOg3YHxnU=
+
+Name: DavidScape/Skills/Fishing.java
+SHA1-Digest: 0DM+LTLyvZVZFazE+hf4IZ88rMM=
+
+Name: DavidScape/net/Monitor.java
+SHA1-Digest: Qz/Jug/63V+1tU9rFyuZj5/7PgQ=
+
+Name: DavidScape/players/items/ReqItems.java
+SHA1-Digest: eJHTWU0En2pfWp95S6/pKgE+USU=
+
+Name: DavidScape/io/packets/PlayerOption2.java
+SHA1-Digest: fpPDMzZkmxY8ttqzVjgAUeMgzMI=
+
+Name: DavidScape/io/packets/PlayerOption1.java
+SHA1-Digest: M2Qe2VzaS6lFMVx6IZNpm/1SRiU=
+
+Name: DavidScape/npcs/update/NPCUpdate.java
+SHA1-Digest: lS6WYv42TbqCyxo95Njl095F3rU=
+
+Name: DavidScape/players/combat/PlayerNPCCombat.java
+SHA1-Digest: 5ufsb23r9TBM0u36id0zJR9imzg=
+
+Name: DavidScape/players/objectLoader.java
+SHA1-Digest: aiTKhe/jm3udNMMysWCby8tzKNs=
+
+Name: DavidScape/io/packets/ItemOnItem.java
+SHA1-Digest: +AF4wYhZe4zA6SO/5YYti3+hvZU=
+
+Name: DavidScape/world/items/GroundItem.java
+SHA1-Digest: iMWYxonwR7plhA29ZpPzR/mZyrw=
+
+Name: DavidScape/players/combat/MagicNPC.java
+SHA1-Digest: QtyNgcoDce/ujJkKsP7Rpiu7W+o=
+
+Name: DavidScape/players/items/BankUtils.java
+SHA1-Digest: Om8DuVykxNGVa8HTKil85kHFPlA=
+
+Name: DavidScape/npcs/update/NPCMovement.java
+SHA1-Digest: WbHoRKSjZb1RSTqVS2nmfskcNVE=
+
+Name: DavidScape/players/PlayerFollow.java
+SHA1-Digest: vghTZXwyUN5rDa3BdjItjuQrbyQ=
+
+Name: DavidScape/io/Login.java
+SHA1-Digest: bUNZFeNOZWcHUasWY9spuPEWMOk=
+
+Name: DavidScape/io/packets/Packet.java
+SHA1-Digest: 0ryr1aE86sbqBSYKHKfpNmns0hw=
+
+Name: DavidScape/io/Packets.java
+SHA1-Digest: OW/1fV8/2Fcxyruh9Y8SRpx2+go=
+
+Name: DavidScape/io/packets/NPCOption3.java
+SHA1-Digest: sLaJSruFXCssb80DjD/F5+VC6Rk=
+
+Name: DavidScape/players/PlayerSave.java
+SHA1-Digest: VjnqAcs1oa5qy6cf9nKaBTTJgIc=
+
+Name: DavidScape/io/packets/bountyHunter.java
+SHA1-Digest: RlMfiZP79iZxmgnhP1QYTKlX3w4=
+
+Name: DavidScape/npcs/combat/NPCPlayerCombat.java
+SHA1-Digest: rhEvSXq/2ARZcMguuPTdB9yCSog=
+
+Name: DavidScape/players/items/PlayerWeapon.java
+SHA1-Digest: 0dpMeV4hEZnhYdvyarTp5VYNzsQ=
+
+Name: DavidScape/players/combat/Z-FileSearcher.jar
+SHA1-Digest: FBPaHsS1R6XRN0T0sDGlSCe4f40=
+
+Name: DavidScape/util/Misc.java
+SHA1-Digest: 1EZTcMvLbAOlcTBvQ8ae3+1aGQ4=
+
+Name: DavidScape/io/packets/SwitchItems.java
+SHA1-Digest: X8KP7o8UJUb6ZvBwnIC0g4cUFDU=
+
+Name: DavidScape/io/packets/NPCAttack.java
+SHA1-Digest: 7cjZSeQMPwaRPmCoH0WaLkw8z70=
+
+Name: DavidScape/players/ptrade/TItem.java
+SHA1-Digest: NBxYnXYSHWSe1EP7VouWlAASJKQ=
+
+Name: DavidScape/net/Z-FileSearcher.jar
+SHA1-Digest: FBPaHsS1R6XRN0T0sDGlSCe4f40=
+
+Name: DavidScape/util/Stream.java
+SHA1-Digest: YNSmQa/i6Xm9lgh31c1v7s2rqLI=
+
+Name: DavidScape/io/packets/PlayerOption3.java
+SHA1-Digest: 0iamYJ0fpiGmWHtxb2/0Muzqv5I=
+
+Name: DavidScape/players/items/Z-FileSearcher.jar
+SHA1-Digest: FBPaHsS1R6XRN0T0sDGlSCe4f40=
+
+Name: DavidScape/io/packets/DropItem.java
+SHA1-Digest: T9nMFOmtUFjYoLk8owX1xgnJxKE=
+
+Name: DavidScape/npcs/update/NPCUpdateMasks.java
+SHA1-Digest: IQvRI2IqQeVsP2GHi48OsOvXwP8=
+
+Name: DavidScape/players/items/PlayerTrade.java
+SHA1-Digest: dXG3SJ1n4Tm8pKGX4maC/yaR080=
+
+Name: DavidScape/players/items/ItemObject.java
+SHA1-Digest: Oxv8YkG/Qt6V3Q0YcSwPFXZmNpA=
+
+Name: DavidScape/players/ptrade/PTrade.java
+SHA1-Digest: jrBlqHxLr6ewLLkq4p8jU9qEj+4=
+
+Name: DavidScape/net/ConnectionManager.java
+SHA1-Digest: Evi9MbSQXmRUIct3PdMhlTKIbwk=
+
+Name: DavidScape/world/items/ItemList.java
+SHA1-Digest: 6cdnneB1PDd567uYaGas1H9r9cg=
+
+Name: DavidScape/io/packets/Equipment.java
+SHA1-Digest: ii4IrSNtTMPgwxgfzjLasqTew4s=
+
+Name: DavidScape/npcs/loading/desktop.ini
+SHA1-Digest: vD2MvcmrgT9TITAjIwwximF8/MM=
+
+Name: DavidScape/net/SocketListener.java
+SHA1-Digest: iB55KGvjY1S8y0UZ3l3kqhmc79c=
+
+Name: DavidScape/players/UserInput.java
+SHA1-Digest: KselL+7dGkOhuJb+/eo/ARpW7rQ=
+
+Name: DavidScape/io/packets/MagicOnNPC.java
+SHA1-Digest: MWqD2JFhbtAL6uFCmYyVrWxFbOs=
+
+Name: DavidScape/net/Protect.java
+SHA1-Digest: cWASpmw/Y9eFS8RZlFVkLJbUIpM=
+
+Name: DavidScape/players/items/PlayerBank.java
+SHA1-Digest: Cb16YPsCNBynqJiTba4ETu5Xi2M=
+
+Name: DavidScape/players/update/PlayerUpdateMasks.java
+SHA1-Digest: 2uj5g3cne2NqVQWpFUBEladNS3I=
+
+Name: DavidScape/io/packets/PublicChat.java
+SHA1-Digest: lHVCzG8zAubPjqZB5wC16FSrlfM=
+
+Name: DavidScape/io/Frames.java
+SHA1-Digest: HoLsiOaGPpMUh0wkCJ1v6v7pKZc=
+
+Name: DavidScape/io/FileManager.java
+SHA1-Digest: zaZqh3wJ+tHN6b8IgprMCm8Jtis=
+
+Name: DavidScape/ClanChat/inChat.java
+SHA1-Digest: UvDANmZqJ5jM5kT81blHq/7FAuE=
+
+Name: DavidScape/io/packets/Z-FileSearcher.jar
+SHA1-Digest: FBPaHsS1R6XRN0T0sDGlSCe4f40=
+
+Name: DavidScape/players/combat/PlayerCombat.java
+SHA1-Digest: Q/d9iEwb3kh8u9RhmLpIcNpZlPA=
+
+Name: DavidScape/io/packets/PickupItem.java
+SHA1-Digest: Cy9IPs/3lrmwj/1heBk/Qal0z6E=
+
+Name: DavidScape/players/castlewars/CastleWarsFL.java
+SHA1-Digest: 80VUeYoVfR9QW1rlVu3jv/dl3WA=
+
+Name: DavidScape/io/packets/NPCOption2.java
+SHA1-Digest: 51s7a7zEdkAgHI99sze/D7Yv4mA=
+
+Name: DavidScape/io/packets/NPCOption1.java
+SHA1-Digest: oWt4MHeLfiyW3IQtp/k4tlhjpZA=
+
+Name: DavidScape/world/items/Z-FileSearcher.jar
+SHA1-Digest: FBPaHsS1R6XRN0T0sDGlSCe4f40=
+
+Name: DavidScape/players/update/PlayerMovement.java
+SHA1-Digest: 0y9psZL48L4zNDSNuPGDAkEBWG4=
+
+Name: DavidScape/world/items/Items.java
+SHA1-Digest: xh9C3jlNmdsNagqyw7MVRKQ9jZ8=
+
+Name: DavidScape/players/items/PlayerItems.java
+SHA1-Digest: QoIU4rDbv4qjAQ/CnwcWG+28RaM=
+
+Name: DavidScape/io/packets/ItemOption2.java
+SHA1-Digest: s0XmUi5xOfsioUTCiLQXmwgqoso=
+
+Name: DavidScape/io/packets/ObjectOption1.java
+SHA1-Digest: kvBYqoEqakWJD0F+CI73mo2T4kg=
+
+Name: DavidScape/io/packets/ItemOnNPC.java
+SHA1-Digest: HZS7I3plfbenDoh/0bbbvuT4P7A=
+
+Name: DavidScape/io/packets/ItemGive.java
+SHA1-Digest: wlj5cSumz2i/rO/giNUCQUDs3ac=
+
+Name: DavidScape/players/Player.java
+SHA1-Digest: 0a0POzSNKBkBk0S5aTrXRHIeWso=
+
+Name: DavidScape/Skills/Smithing.java
+SHA1-Digest: UN9PDGdYQVPBpeXswf00aTN0vas=
+
+Name: DavidScape/ClanChat/ClanMain.java
+SHA1-Digest: fk49bFZzfXGv0rVl3hIpiBPkHUE=
+
+Name: DavidScape/io/packets/ClanChat.java
+SHA1-Digest: VO8FNydmIVIRE87F1UfMoDmtYVA=
+
+Name: DavidScape/io/packets/Prayer.java
+SHA1-Digest: qQ6y1e2iXcsRZXv5WlswNWjjKpc=
+
+Name: DavidScape/world/mapdata/MapData.java
+SHA1-Digest: k2ljH5jm4KwqD7DLPVibnJIY8Ek=
+
+Name: server.java
+SHA1-Digest: CH2eRFFr7vRB5yC/PwIbPFMpXcE=
+
+Name: DavidScape/io/packets/SwitchItems2.java
+SHA1-Digest: yEiEa7ZZrEPSnBYsBC/dBIgrhko=
+
+Name: DavidScape/players/Magic.java
+SHA1-Digest: o5ZOnDLldLEOtp5pPfbAQiC3bRs=
+

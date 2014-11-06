@@ -1,0 +1,55 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_26-b03 (Sun Microsystems Inc.)
+
+Name: NPCList.java
+SHA1-Digest: v6CSlUgAd+ALrbgx2YMHoisXTt0=
+
+Name: misc.java
+SHA1-Digest: SdFOhAkZb4cD45SwaOar66hJHuw=
+
+Name: ItemList.java
+SHA1-Digest: G6RSPQOtdGz8MQ7rnhSeTQVU/GY=
+
+Name: Items.java
+SHA1-Digest: yZWw41BIk98fiLYKllQuktYbS8A=
+
+Name: ShopHandler.java
+SHA1-Digest: 8yr3/cpwGcqzaar3WSfff+dAG5g=
+
+Name: Players.java
+SHA1-Digest: u9mfVqt2WUDujBkb9R53nhG2vsg=
+
+Name: NPCDrops.java
+SHA1-Digest: 2CpI5kl1NbX4ne4yzFzsvhXGNqA=
+
+Name: ClientHandler.java
+SHA1-Digest: GnOpDRwDu1HJbtaJ+YWaI3QYNvc=
+
+Name: PlayerHandler.java
+SHA1-Digest: OcRjQFd3EiAXf0HTWOwSZ8IsqSg=
+
+Name: DialogueHandler.java
+SHA1-Digest: GOcTRXVF2AHBNl0BuDMvbuSWwAQ=
+
+Name: NPCHandler.java
+SHA1-Digest: tKNUyyUTbQWWgYhFE0j9lQESWlg=
+
+Name: ItemHandler.java
+SHA1-Digest: tgx/3/OmIVI0mIhwmI7PzeV2y+0=
+
+Name: Cryption.java
+SHA1-Digest: Gwfof/HZC/cF7hRymyfaePB98+g=
+
+Name: NPCs.java
+SHA1-Digest: KCXAqNrgJIOwaO1V54X1RwZDdBg=
+
+Name: ReTT.java
+SHA1-Digest: 4cFFO+TYW1DA5A2S+43pwlrbeOw=
+
+Name: stream.java
+SHA1-Digest: z/pD6Lu3INJlonHOe/M0k0E5iNg=
+
+Name: server.java
+SHA1-Digest: uwnjO1pVxgSXUbJDrFUZkThuD3I=
+
