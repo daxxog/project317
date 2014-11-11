@@ -68,7 +68,7 @@ public final class ISAACRandomGen {
             j1 ^= k1 << 8;
             i2 += j1;
             k1 += l1;
-            k1 ^= (l1 >>> 16);
+            k1 ^= l1 >>> 16;
             j2 += k1;
             l1 += i2;
             l1 ^= i2 << 10;

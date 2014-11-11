@@ -1,5 +1,5 @@
 /* Cryption.js
- * Cryption.java ported to javascript
+ * ISAACRandomGen.java ported to javascript
  * (c) 2013 David (daXXog) Volm ><> + + + <><
  * Released under Apache License, Version 2.0:
  * http://www.apache.org/licenses/LICENSE-2.0.html  
@@ -21,10 +21,10 @@
   }
 }(this, function() {
 
-    var Cryption = function(ai) {
+    var Cryption = function(seed) {
         this.vars();
 
-        this.keySetArray = ai.map(function(v) {
+        this.results = seed.map(function(v) {
             return v;
         });
 
@@ -32,167 +32,174 @@
     };
 
     Cryption.prototype.getNextKey = function() {
-        if(this.keyArrayIdx-- == 0) {
-            this.generateNextKeySet();
-            this.keyArrayIdx = 255;
+        if(this.count-- == 0)
+        {
+            this.isaac();
+            this.count = 255;
         }
-
-        return this.keySetArray[this.keyArrayIdx];
+        return (this.results[this.count] | 0);
     };
 
-    Cryption.prototype.generateNextKeySet = function() {
-        var j, k;
-
-        this.cryptVar2 += ++this.cryptVar3;
-
-        for(var i = 0; i < 256; i++) {
-            j = this.cryptArray[i];
-
-            if((i & 3) == 0) {
-                this.cryptVar1 ^= this.cryptVar1 << 13;
-            } else if((i & 3) == 1) {
-                this.cryptVar1 ^= this.cryptVar1 >>> 6;
-            } else if((i & 3) == 2) {
-                this.cryptVar1 ^= this.cryptVar1 << 2;
-            } else if((i & 3) == 3) {
-                this.cryptVar1 ^= this.cryptVar1 >>> 16;
-            }
-
-            this.cryptVar1 += this.cryptArray[i + 128 & 0xff];
-            this.cryptArray[i] = k = this.cryptArray[(j & 0x3fc) >> 2] + this.cryptVar1 + this.cryptVar2;
-            this.keySetArray[i] = this.cryptVar2 = this.cryptArray[(k >> 8 & 0x3fc) >> 2] + j;
+    Cryption.prototype.isaac = function() {
+        this.lastResult += (++this.counter | 0);
+        for(var i = 0; i < 256; i++)
+        {
+            var j = (this.memory[i] | 0);
+            if((i & 3) == 0)
+                this.accumulator ^= (this.accumulator | 0) << 13;
+            else
+            if((i & 3) == 1)
+                this.accumulator ^= (this.accumulator | 0) >>> 6;
+            else
+            if((i & 3) == 2)
+                this.accumulator ^= (this.accumulator | 0) << 2;
+            else
+            if((i & 3) == 3)
+                this.accumulator ^= (this.accumulator | 0) >>> 16;
+            this.accumulator += (this.memory[i + 128 & 0xff] | 0);
+            var k;
+            this.memory[i] = k = (this.memory[(j & 0x3fc) >> 2] | 0) + (this.accumulator | 0) + (this.lastResult | 0);
+            this.results[i] = this.lastResult = (this.memory[(k >> 8 & 0x3fc) >> 2] | 0) + j;
         }
+
     };
 
     Cryption.prototype.initializeKeySet = function() {
-        var l, i1, j1, k1, l1, i2, j2, k2;
-        
-        l = i1 = j1 = k1 = l1 = i2 = j2 = k2 = 0x9e3779b9;
-        
-        for(var i = 0; i < 4; i++) {
-            l ^= i1 << 11;
-            k1 += l;
-            i1 += j1;
-            i1 ^= j1 >>> 2;
-            l1 += i1;
-            j1 += k1;
-            j1 ^= k1 << 8;
-            i2 += j1;
-            k1 += l1;
-            k1 ^= l1 >>> 16;
-            j2 += k1;
-            l1 += i2;
-            l1 ^= i2 << 10;
-            k2 += l1;
-            i2 += j2;
-            i2 ^= j2 >>> 4;
-            l += i2;
-            j2 += k2;
-            j2 ^= k2 << 8;
-            i1 += j2;
-            k2 += l;
-            k2 ^= l >>> 9;
-            j1 += k2;
-            l += i1;
+        var i1;
+        var j1;
+        var k1;
+        var l1;
+        var i2;
+        var j2;
+        var k2;
+        var l = i1 = j1 = k1 = l1 = i2 = j2 = k2 = (0x9e3779b9 | 0); //(ha | 0)x: convert to a (si | 0)gned 32-bit (in | 0)teger
+        for(var i = 0; i < 4; i++)
+        {
+            l ^= (i1 | 0) << 11;
+            k1 += (l | 0);
+            i1 += (j1 | 0);
+            i1 ^= (j1 | 0) >>> 2;
+            l1 += (i1 | 0);
+            j1 += (k1 | 0);
+            j1 ^= (k1 | 0) << 8;
+            i2 += (j1 | 0);
+            k1 += (l1 | 0);
+            k1 ^= ((l1 | 0) >>> 16);
+            j2 += (k1 | 0);
+            l1 += (i2 | 0);
+            l1 ^= (i2 | 0) << 10;
+            k2 += (l1 | 0);
+            i2 += (j2 | 0);
+            i2 ^= (j2 | 0) >>> 4;
+            l += (i2 | 0);
+            j2 += (k2 | 0);
+            j2 ^= (k2 | 0) << 8;
+            i1 += (j2 | 0);
+            k2 += (l | 0);
+            k2 ^= (l | 0) >>> 9;
+            j1 += (k2 | 0);
+            l += (i1 | 0);
         }
 
-        for(var j = 0; j < 256; j += 8) {
-            l += this.keySetArray[j];
-            i1 += this.keySetArray[j + 1];
-            j1 += this.keySetArray[j + 2];
-            k1 += this.keySetArray[j + 3];
-            l1 += this.keySetArray[j + 4];
-            i2 += this.keySetArray[j + 5];
-            j2 += this.keySetArray[j + 6];
-            k2 += this.keySetArray[j + 7];
-            l ^= i1 << 11;
-            k1 += l;
-            i1 += j1;
-            i1 ^= j1 >>> 2;
-            l1 += i1;
-            j1 += k1;
-            j1 ^= k1 << 8;
-            i2 += j1;
-            k1 += l1;
-            k1 ^= l1 >>> 16;
-            j2 += k1;
-            l1 += i2;
-            l1 ^= i2 << 10;
-            k2 += l1;
-            i2 += j2;
-            i2 ^= j2 >>> 4;
-            l += i2;
-            j2 += k2;
-            j2 ^= k2 << 8;
-            i1 += j2;
-            k2 += l;
-            k2 ^= l >>> 9;
-            j1 += k2;
-            l += i1;
-            this.cryptArray[j] = l;
-            this.cryptArray[j + 1] = i1;
-            this.cryptArray[j + 2] = j1;
-            this.cryptArray[j + 3] = k1;
-            this.cryptArray[j + 4] = l1;
-            this.cryptArray[j + 5] = i2;
-            this.cryptArray[j + 6] = j2;
-            this.cryptArray[j + 7] = k2;
+        for(var j = 0; j < 256; j += 8)
+        {
+            l += (this.results[j] | 0);
+            i1 += (this.results[j + 1] | 0);
+            j1 += (this.results[j + 2] | 0);
+            k1 += (this.results[j + 3] | 0);
+            l1 += (this.results[j + 4] | 0);
+            i2 += (this.results[j + 5] | 0);
+            j2 += (this.results[j + 6] | 0);
+            k2 += (this.results[j + 7] | 0);
+            l ^= (i1 | 0) << 11;
+            k1 += (l | 0);
+            i1 += (j1 | 0);
+            i1 ^= (j1 | 0) >>> 2;
+            l1 += (i1 | 0);
+            j1 += (k1 | 0);
+            j1 ^= (k1 | 0) << 8;
+            i2 += (j1 | 0);
+            k1 += (l1 | 0);
+            k1 ^= (l1 | 0) >>> 16;
+            j2 += (k1 | 0);
+            l1 += (i2 | 0);
+            l1 ^= (i2 | 0) << 10;
+            k2 += (l1 | 0);
+            i2 += (j2 | 0);
+            i2 ^= (j2 | 0) >>> 4;
+            l += (i2 | 0);
+            j2 += (k2 | 0);
+            j2 ^= (k2 | 0) << 8;
+            i1 += (j2 | 0);
+            k2 += (l | 0);
+            k2 ^= (l | 0) >>> 9;
+            j1 += (k2 | 0);
+            l += (i1 | 0);
+            this.memory[j] = (l | 0);
+            this.memory[j + 1] = (i1 | 0);
+            this.memory[j + 2] = (j1 | 0);
+            this.memory[j + 3] = (k1 | 0);
+            this.memory[j + 4] = (l1 | 0);
+            this.memory[j + 5] = (i2 | 0);
+            this.memory[j + 6] = (j2 | 0);
+            this.memory[j + 7] = (k2 | 0);
         }
 
-        for(var k = 0; k < 256; k += 8) {
-            l += this.cryptArray[k];
-            i1 += this.cryptArray[k + 1];
-            j1 += this.cryptArray[k + 2];
-            k1 += this.cryptArray[k + 3];
-            l1 += this.cryptArray[k + 4];
-            i2 += this.cryptArray[k + 5];
-            j2 += this.cryptArray[k + 6];
-            k2 += this.cryptArray[k + 7];
-            l ^= i1 << 11;
-            k1 += l;
-            i1 += j1;
-            i1 ^= j1 >>> 2;
-            l1 += i1;
-            j1 += k1;
-            j1 ^= k1 << 8;
-            i2 += j1;
-            k1 += l1;
-            k1 ^= l1 >>> 16;
-            j2 += k1;
-            l1 += i2;
-            l1 ^= i2 << 10;
-            k2 += l1;
-            i2 += j2;
-            i2 ^= j2 >>> 4;
-            l += i2;
-            j2 += k2;
-            j2 ^= k2 << 8;
-            i1 += j2;
-            k2 += l;
+        for(var k = 0; k < 256; k += 8)
+        {
+            l += (this.memory[k] | 0);
+            i1 += (this.memory[k + 1] | 0);
+            j1 += (this.memory[k + 2] | 0);
+            k1 += (this.memory[k + 3] | 0);
+            l1 += (this.memory[k + 4] | 0);
+            i2 += (this.memory[k + 5] | 0);
+            j2 += (this.memory[k + 6] | 0);
+            k2 += (this.memory[k + 7] | 0);
+            l ^= (i1 | 0) << 11;
+            k1 += (l | 0);
+            i1 += (j1 | 0);
+            i1 ^= (j1 | 0) >>> 2;
+            l1 += (i1 | 0);
+            j1 += (k1 | 0);
+            j1 ^= (k1 | 0) << 8;
+            i2 += (j1 | 0);
+            k1 += (l1 | 0);
+            k1 ^= (l1 | 0) >>> 16;
+            j2 += (k1 | 0);
+            l1 += (i2 | 0);
+            l1 ^= (i2 | 0) << 10;
+            k2 += (l1 | 0);
+            i2 += (j2 | 0);
+            i2 ^= (j2 | 0) >>> 4;
+            l += (i2 | 0);
+            j2 += (k2 | 0);
+            j2 ^= (k2 | 0) << 8;
+            i1 += (j2 | 0);
+            k2 += (l | 0);
             k2 ^= l >>> 9;
-            j1 += k2;
-            l += i1;
-            this.cryptArray[k] = l;
-            this.cryptArray[k + 1] = i1;
-            this.cryptArray[k + 2] = j1;
-            this.cryptArray[k + 3] = k1;
-            this.cryptArray[k + 4] = l1;
-            this.cryptArray[k + 5] = i2;
-            this.cryptArray[k + 6] = j2;
-            this.cryptArray[k + 7] = k2;
+            j1 += (k2 | 0);
+            l += (i1 | 0);
+            this.memory[k] = (l | 0);
+            this.memory[k + 1] = (i1 | 0);
+            this.memory[k + 2] = (j1 | 0);
+            this.memory[k + 3] = (k1 | 0);
+            this.memory[k + 4] = (l1 | 0);
+            this.memory[k + 5] = (i2 | 0);
+            this.memory[k + 6] = (j2 | 0);
+            this.memory[k + 7] = (k2 | 0);
         }
 
-        this.generateNextKeySet();
-        this.keyArrayIdx = 256;
+        this.isaac();
+        this.count = 256;
     };
 
     Cryption.prototype.vars = function() {
-        this.keyArrayIdx = 0;
-        this.cryptArray = [];
-        this.keySetArray = [];
-        this.cryptVar1 = 0;
-        this.cryptVar2 = 0;
-        this.cryptVar3 = 0;
+        this.count = null;
+        this.results = [];
+        this.memory = [];
+        this.accumulator = null;
+        this.lastResult = null;
+        this.counter = null;
     };
 
     return Cryption;
