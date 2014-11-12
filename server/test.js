@@ -1,9 +1,9 @@
 var net = require('net'),
-	vows = require('vows'),
+	//vows = require('vows'),
     assert = require('assert'),
     Cryption = require('./Cryption.js'),
     Misc = require('./Misc.js'),
-    Thread = require('./Thread.js'),
+    //Thread = require('./Thread.js'),
     Stream = require('./Stream.js'),
     BufferWrapper = require('./BufferWrapper.js'),
     OutPacketFactory = require('./OutPacketFactory.js'),
@@ -81,7 +81,7 @@ net.createServer().listen(43594, '127.0.0.1').on('connection', function(socket) 
 	});
 
 	ipf.on('loginRequest', function(stream) {
-		var serverSessionKey = [0xCAFE, 0xBABE],//serverSessionKey = [~(Math.random() * 0x99999999D), ~(Math.random() * 0x99999999D)],
+		var serverSessionKey = serverSessionKey = [~(Math.random() * 0x99999999D), ~(Math.random() * 0x99999999D)],
 			namePart,
 			loginResponse;
 		

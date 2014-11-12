@@ -1,5 +1,5 @@
-/* RuneServer.js
- * a new type of server.java
+/* SocketTimer.js
+ * time synched socket.write
  * (c) 2013 David (daXXog) Volm ><> + + + <><
  * Released under Apache License, Version 2.0:
  * http://www.apache.org/licenses/LICENSE-2.0.html  
@@ -17,27 +17,32 @@
         define(factory);
     } else {
         // Browser globals (root is window)
-        root.RuneServer = factory();
+        root.SocketTimer = factory();
   }
 }(this, function() {
-    var net = require('net'),
-        ClientHandler = require('./ClientHandler.js');
-
-    var RuneServer = function() {
-        this.vars();
+    var SocketTimer = function(socket) {
+        this.stack = [];
+        this.socket = socket;
+        this.loop();
     };
 
-    RuneServer.prototype.listen = function() {
-        console.log('Starting project317 server on '+this.addr+':'+this.port);
-        net.createServer().listen(this.port, this.addr).on('connection', function(socket) {
-            new ClientHandler(socket);
-        });
+    SocketTimer.prototype.write = function(buffer) {
+        this.stack.push(buffer);
     };
 
-    RuneServer.prototype.vars = function() {
-        this.addr = '127.0.0.1';
-        this.port = 43594;
-    };
+    SocketTimer.prototype.loop = function() {
+        setTimeout((function(that) {
+            return function() {
+                that.stack.forEach(function(buffer) {
+                    that.socket.write(buffer);
+                });
 
-    return RuneServer;
+                that.stack = [];
+
+                that.loop();
+            };
+        })(this), 400);
+    };
+    
+    return SocketTimer;
 }));

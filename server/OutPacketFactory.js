@@ -34,6 +34,12 @@
                 args[i] = arguments[i];
             }
 
+            if(typeof s.packetEncryption == 'object') {
+                if(typeof s.packetEncryption.out == 'object') {
+                    s.packetEncryption = s.packetEncryption.out;
+                }
+            }
+
             args.unshift(s);
             b.apply(null, args);
 

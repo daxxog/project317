@@ -20,50 +20,7 @@
         root.Stream = factory();
   }
 }(this, function() {
-    var Stream = function(abyte0) {
-        this.vars();
-
-        this.buffer = abyte0;
-    };
-
-    Stream.prototype.readSignedByteA = function() {
-        return this.buffer[this.currentOffset++] - 128;
-    };
-
-    Stream.prototype.readSignedByteC = function() {
-        return -this.buffer[this.currentOffset++];
-    };
-
-    Stream.prototype.readSignedByteS = function() {
-        return 128 - this.buffer[this.currentOffset++];
-    };
-
-    Stream.prototype.readUnsignedByteA = function() {
-        return this.buffer[this.currentOffset++] - 128 & 0xff;
-    };
-
-    Stream.prototype.readUnsignedByteC = function() {
-        return -this.buffer[this.currentOffset++] & 0xff;
-    };
-
     
-
-    Stream.bitMaskOut = (function() {
-        var bitMaskOut = [];
-
-        for(var i = 0; i < 32; i++) {
-            bitMaskOut[i] = Math.pow(2, i) - 1;
-        }
-
-        return bitMaskOut;
-    })();
-
-    Stream.prototype.vars = function() {
-        this.buffer = [];
-        this.currentOffset = 0;
-        this.bitPosition = 0;
-        this.packetEncryption = null;
-    };
-
+    
     return Stream;
 }));

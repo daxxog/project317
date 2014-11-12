@@ -158,6 +158,34 @@
         this.buffer[this.currentOffset++] = Stream.bytew(i + this.packetEncryption.getNextKey());
     };
 
+    Stream.prototype.createFrameVarSize = function(id) { // creates a variable sized frame
+        this.createFrame(id);
+        this.writeByte(0); // placeholder for size byte
+        if(!(this.frameStackPtr >= Stream.frameStackSize - 1)) {
+            this.frameStack[++this.frameStackPtr] = this.currentOffset;
+        }
+    };
+
+    Stream.prototype.createFrameVarSizeWord = function(id) { // creates a variable sized frame
+        this.createFrame(id);
+        this.writeWord(0); // placeholder for size word
+        if(!(this.frameStackPtr >= Stream.frameStackSize - 1)) {
+            this.frameStack[++this.frameStackPtr] = this.currentOffset;
+        }
+    };
+
+    Stream.prototype.endFrameVarSize = function() {// ends a variable sized frame
+        if(!(this.frameStackPtr < 0)) {
+            this.writeFrameSize(this.currentOffset - this.frameStack[this.frameStackPtr--]);
+        }
+    };
+
+    Stream.prototype.endFrameVarSizeWord = function() { // ends a variable sized frame
+        if(!(this.frameStackPtr < 0)) {
+            this.writeFrameSizeWord(this.currentOffset - this.frameStack[this.frameStackPtr--]);
+        }
+    };
+
     Stream.prototype.writeByte = function(i) {
         this.buffer[this.currentOffset++] = Stream.bytew(i);
     };
@@ -240,7 +268,7 @@
 
     Stream.prototype.writeBytes = function(abyte0, i, j) {
         for(var k = j; k < j + i; k++) {
-            this.buffer[this.currentOffset++] = abyte0[k];
+            this.buffer[this.currentOffset++] = Stream.bytew(abyte0[k]);
         }
     };
 
@@ -333,6 +361,7 @@
         return b;
     };
 
+    Stream.frameStackSize = 10;
     Stream.bitMaskOut = (function() {
         var bitMaskOut = [];
 
@@ -352,6 +381,8 @@
         this.currentOffset = 0;
         this.bitPosition = 0;
         this.packetEncryption = null;
+        this.frameStackPtr = -1;
+        this.frameStack = [];
     };
 
     return Stream;
