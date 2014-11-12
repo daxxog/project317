@@ -21,6 +21,7 @@
   }
 }(this, function() {
     var net = require('net'),
+        Sync = require('./Sync.js'),
         ClientHandler = require('./ClientHandler.js');
 
     var RuneServer = function() {
@@ -28,15 +29,18 @@
     };
 
     RuneServer.prototype.listen = function() {
+        var sync = this.sync;
+
         console.log('Starting project317 server on '+this.addr+':'+this.port);
         net.createServer().listen(this.port, this.addr).on('connection', function(socket) {
-            new ClientHandler(socket);
+            new ClientHandler(socket, sync);
         });
     };
 
     RuneServer.prototype.vars = function() {
         this.addr = '127.0.0.1';
         this.port = 43594;
+        this.sync = new Sync();
     };
 
     return RuneServer;

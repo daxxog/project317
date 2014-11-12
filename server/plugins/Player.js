@@ -35,6 +35,7 @@
 
     Player.prototype.respo = function() {
         var iph = this.iph,
+            sync = this.sync,
             timer = this.timer,
             crypt = this.crypt,
             opfs = this.opfs,
@@ -46,11 +47,22 @@
         iph.on('initPlayer', function(name, password, uid) {
             console.log(name, password, uid);
 
-            timer.write(opfs.frame73(0x120, 0x195)); // change those to get a different starting point
+            //timer.write(opfs.frame176(201, 0, 0, 0x7f000001, 0));
+            timer.write(opfs.frame73(340 + Misc.random(100), 340 + Misc.random(100))); // change those to get a different starting point
             timer.write(opfs.frame81());
-            //timer.write(opfs.frame68());
-            timer.write(opfs.frame176(5, 1, 20, 1234, 5));
-            //timer.write(opfs.CreateNoobyItems());
+            //timer.write(opfs.frame81());
+
+            setTimeout(function() {
+                timer.write(opfs.noobWalk()); //running twice causes crash??
+            }, 2000);
+
+            sync.on('tick', function() {
+                //timer.write(opfs.CreateNoobyItems());
+                //timer.write(opfs.noobWalk());
+                //timer.write(opfs.frame81());
+            });
+
+            timer.write(opfs.CreateNoobyItems());
         });
     };
 

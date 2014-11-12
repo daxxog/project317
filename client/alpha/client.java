@@ -10347,20 +10347,26 @@ public final class client extends RSApplet {
                 membersInt = inStream.readUnsignedByte();
                 anInt1193 = inStream.method440();
                 daysSinceLastLogin = inStream.readUnsignedWord();
+                //System.out.println("p176 - " + daysSinceRecovChange + " - " + unreadMessages + " - " + membersInt + " - " + daysSinceLastLogin + " - " + anInt1193 + " - " + openInterfaceID);
                 if(anInt1193 != 0 && openInterfaceID == -1)
                 {
+                    //System.out.println(TextClass.method586(anInt1193));
                     signlink.dnslookup(TextClass.method586(anInt1193));
                     clearTopInterfaces();
-                    char c = '\u028A';
+                    char c = '\u028A'; //650
                     if(daysSinceRecovChange != 201 || membersInt == 1)
-                        c = '\u028F';
+                        c = '\u028F'; //655
                     reportAbuseInput = "";
                     canMute = false;
                     for(int k9 = 0; k9 < RSInterface.interfaceCache.length; k9++)
                     {
+                        /*if((RSInterface.interfaceCache[k9] != null) && (RSInterface.interfaceCache[k9].anInt214 != 0)) {
+                            System.out.println((int)c+" - "+k9+": anInt214 - " + RSInterface.interfaceCache[k9].anInt214);
+                        }*/
                         if(RSInterface.interfaceCache[k9] == null || RSInterface.interfaceCache[k9].anInt214 != c)
                             continue;
                         openInterfaceID = RSInterface.interfaceCache[k9].parentID;
+                        //System.out.println("openInterfaceID - " + openInterfaceID);
                         break;
                     }
 
@@ -11520,6 +11526,7 @@ public final class client extends RSApplet {
         }
         catch(Exception exception)
         {
+            exception.printStackTrace();
             String s2 = "T2 - " + pktType + "," + anInt842 + "," + anInt843 + " - " + pktSize + "," + (baseX + myPlayer.smallX[0]) + "," + (baseY + myPlayer.smallY[0]) + " - ";
             for(int j15 = 0; j15 < pktSize && j15 < 50; j15++)
                 s2 = s2 + inStream.buffer[j15] + ",";

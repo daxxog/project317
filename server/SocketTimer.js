@@ -20,28 +20,31 @@
         root.SocketTimer = factory();
   }
 }(this, function() {
-    var SocketTimer = function(socket) {
+    var SocketTimer = function(socket, sync) {
         this.stack = [];
         this.socket = socket;
-        this.loop();
+        this.sync = sync;
+        this.bind();
     };
 
     SocketTimer.prototype.write = function(buffer) {
         this.stack.push(buffer);
     };
 
-    SocketTimer.prototype.loop = function() {
-        setTimeout((function(that) {
+    SocketTimer.prototype.bind = function() {
+        this.sync.on('tick', (function(that) {
             return function() {
                 that.stack.forEach(function(buffer) {
-                    that.socket.write(buffer);
+                    if(that.socket.writable) {
+                        that.socket.write(buffer);
+                    } else {
+                        //connection lost
+                    }
                 });
 
                 that.stack = [];
-
-                that.loop();
             };
-        })(this), 400);
+        })(this));
     };
     
     return SocketTimer;

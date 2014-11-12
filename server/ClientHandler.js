@@ -27,11 +27,12 @@
         InPacketHandler = require('./InPacketHandler.js'),
         SocketTimer = require('./SocketTimer.js');
 
-    var ClientHandler = function(socket) {
+    var ClientHandler = function(socket, sync) {
         this.vars();
 
         this.socket = socket;
-        this.timer = new SocketTimer(socket);
+        this.sync = sync;
+        this.timer = new SocketTimer(socket, sync);
         socket.on('data', this.iph.dataHandler());
         this.loadPlugins();
     };
@@ -42,6 +43,7 @@
                 lib: this.libs,
                 iph: this.iph,
                 timer: this.timer,
+                sync: this.sync,
                 opfs: this.opfs,
                 crypt: this.crypt
             });

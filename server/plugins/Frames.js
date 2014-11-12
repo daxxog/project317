@@ -44,10 +44,6 @@
             stream.writeByte(0);        // flagged: If set to 1, information about mouse movements etc. are sent to the server.
         });
 
-        opfs.frame68 =  OutPacketFactory(function(stream) { //turn private chat off
-            stream.createFrame(68);
-        }, crypt);
-
         opfs.frame73 = OutPacketFactory(function(stream, mapRegionX, mapRegionY) { // initiate loading of new map area
             stream.createFrame(73);
             stream.writeWordA(mapRegionX);
@@ -70,24 +66,25 @@
             stream.finishBitAccess(); //-- id=0x3dfbfe02f37581 ts=2
 
             stream.writeByte(16); //appearanceUpdateRequired
-            stream.writeByteC(56); // size of player appearance block
+            stream.writeByteC(55); // size of player appearance block
 
             stream.writeByte(0); //sex
             stream.writeByte(0); //head icon
 
             //equipment
-            stream.writeWord(3897); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(1564); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(2224); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(5187); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(3899); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(3402); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(285); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(3901); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(263); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(3903); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(3905); //-- id=0x5e94f790121d693 ts=2
-            stream.writeWord(270); //-- id=0x5e94f790121d693 ts=2
+            stream.writeWord(0x200 + 1040); //playerHat
+            stream.writeWord(1564); //playerCape
+            stream.writeWord(2224); //playerAmulet
+            stream.writeWord(5187); //playerWeapon
+            stream.writeWord(0x200 + 644); //playerChest
+            stream.writeWord(0x200 + 2597); //playerShield
+            stream.writeByte(0); //isPlate mask
+            //stream.writeWord(285); //isPlate mask
+            stream.writeWord(0x200 + 1099); //playerLegs
+            stream.writeWord(263); //isFullHelm mask
+            stream.writeWord(3903); //playerHands
+            stream.writeWord(3905); //playerFeet
+            stream.writeWord(270); //Beard mask
 
             stream.writeByte(7); // hair color
             stream.writeByte(8); // torso color.
@@ -110,14 +107,48 @@
             stream.endFrameVarSizeWord(); //-- id=0x3dfbfe02f37581 ts=3
         }, crypt);
 
-        opfs.frame176 = OutPacketFactory(function(stream, i1, i2, i3, i4, i5) { // welcome screen
-            console.log('176');
+        opfs.frame97 = OutPacketFactory(function(stream, i) { //showInterface
+            stream.createFrame(97);
+            stream.writeWord(i);
+        }, crypt);
+
+        opfs.frame176 = OutPacketFactory(function(stream, recoveryChange, messages, memberWarning, lastLoginIP, lastLogin) { // welcome screen
             stream.createFrame(176);
-            stream.writeByteC(i1);
-            stream.writeByte(i2);
-            stream.writeWordA(i3);
-            stream.writeDWord_v2(i4)
-            stream.writeWord(i5);
+            // days since last recovery change 200 for not yet set 201 for members server,
+            // otherwise, how many days ago recoveries have been changed.
+            stream.writeByteC(recoveryChange);
+            stream.writeWordA(messages);          // # of unread messages
+            stream.writeByte(memberWarning);      // 1 for member on non-members world warning
+            stream.writeDWord_v2(lastLoginIP);    // ip of last login
+            stream.writeWord(lastLogin);          // days
+        }, crypt);
+
+        opfs.noobWalk = OutPacketFactory(function(stream) {
+                // some n00by walking packet
+                stream.createFrameVarSizeWord(81); //-- id=0x3829300ac21d0 ts=37
+
+                // update thisPlayer
+                stream.initBitAccess();
+                stream.writeBits(1, 1);      // set to true if updating thisPlayer
+
+                // walk code
+                stream.writeBits(2, 1);      // updateType - 1=walk in direction
+                stream.writeBits(3, 1);      // direction
+                stream.writeBits(1, 0);      // set to true, if this player is not in local list yet???
+
+
+                // run code
+                /*
+                stream.writeBits(2, 2);      // updateType - 2=run in direction
+                stream.writeBits(3, 1);      // direction step 1
+                stream.writeBits(3, 1);      // direction step 2
+                stream.writeBits(1, 1);      // set to true, if this player is not in local list yet???
+                */
+
+                stream.writeBits(8, 0);      // no other players...
+                stream.finishBitAccess();
+
+                stream.endFrameVarSizeWord();
         }, crypt);
 
         opfs.CreateNoobyItems = OutPacketFactory(function(stream) {
